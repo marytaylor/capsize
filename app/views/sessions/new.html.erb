@@ -1,25 +1,12 @@
 <%= form_tag sessions_path do -%>
+<%= stylesheet_link_tag 'login' %>
 
-  <fieldset class="fieldset">
-    <legend>Capsize login</legend>
-    <div style="float: right; padding: 20px;">
-      <%= image_tag('peritor_theme/webistrano_logo_large.png', :border => '0', :width => '400', :height => '130')%>
+<body>
+  <div class='loginbox'>
+      <div class='input-field'><%= image_tag('peritor_theme/logo.png', :left => '480', :top => '204', :position => 'absolute', class: 'Logo' )%></div>
+      <div class='input-field'><%= text_field_tag 'login', nil, :placeholder => "   Username", class: 'Username' %></div><br/>
+      <div class='input-field'><%= password_field_tag 'password', nil, :placeholder => '   Password', class: 'Password' %></div>
+      <div class='input-field'><%= submit_tag 'Login', class: 'Login' %></div>
     </div>
-    <div>
-      <p><label for="login">Login</label><br/>
-      <%= text_field_tag 'login' %></p>
-      <p><label for="password">Password</label><br/>
-      <%= password_field_tag 'password' %></p>
-      <p><%= check_box_tag 'remember_me', '1', {}, :class => 'noframe' %>
-      <label for="remember_me">Remember me</label></p>
-      <p>
-      <%= submit_tag 'Log in' %>
-      </p>
-    </div>
-  </fieldset>
 <% end -%>
-
-<% content_for(:page_title) do %>
-  <% @page_title = "Login" %>
-  <h2 style="color: #A40008; ">Welcome to Capsize</h2>
-<% end %>
+</body>

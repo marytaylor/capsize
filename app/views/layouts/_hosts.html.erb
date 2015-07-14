@@ -8,7 +8,7 @@
       </a>
     <% end %>
   <% else %>
-    <div class="menu_item">No host created yet</div>
+    <div class="menu_item">No host created yet.</div>
     <%- if current_user.can_manage_hosts? -%>
       <a href="<%= new_host_path %>" class="menu_link  menu_link_create">
   	    <div class="menu_link_title">
@@ -24,4 +24,4 @@
 	    <%=h pluralize(@sidebar_hosts.length, 'host')%>
 	  </div>
   </a>
-</div>  
+</div>

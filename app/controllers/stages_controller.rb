@@ -97,9 +97,10 @@ class StagesController < ApplicationController
   # GET /projects/1/stages/1/capfile
   # GET /projects/1/stages/1/capifile.xml
   def capfile
-    @capfile = File.read("Capfile")
+    @stage = current_project.stages.find(params[:id])
+
     respond_to do |format|
-      format.html { render :layout => false }
+      format.html { render :layout => false, :content_type => 'text/plain' }
       format.xml  { render :xml => @stage.to_xml }
     end
   end

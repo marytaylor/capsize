@@ -92,14 +92,14 @@ legend {
 #app_top {
 	margin: 0 auto;
 	width: 950px;
-	background: url(/images/peritor_theme/background_app.png?1289265223) top no-repeat;
+	background: #66BB00;
 }
 
 #app_bottom {
 	margin: 0 auto;
 	width: 950px;
   height: 50px;
-	background: url(/images/peritor_theme/background_app.png?1289265223) bottom no-repeat;
+	background: #66BB00;
 }
 
 #header {
@@ -124,7 +124,7 @@ legend {
 	padding: 30px 20px 20px 20px;
 	background: #FFFFFF;
 	min-height: 350px;
-} 
+}
 
 #footer {
 	width:870px;
@@ -147,10 +147,10 @@ legend {
 }
 
 .deployment_status {
-  width: 212px; 
-  border-top: 1px solid #CCCCCC; 
-  margin-top: 20px; 
-  padding: 10px 0px 0px 0px; 
+  width: 212px;
+  border-top: 1px solid #CCCCCC;
+  margin-top: 20px;
+  padding: 10px 0px 0px 0px;
   text-align: center;
 }
 
@@ -183,7 +183,7 @@ legend {
 
 .menu_box_header {
 	height: 23px;
-	background: url(/images/peritor_theme/menu_top.gif?1289265223) repeat-x;	
+	background: url(/images/peritor_theme/menu_top.gif?1289265223) repeat-x;
 }
 
 .menu_box_arrow {
@@ -206,7 +206,7 @@ legend {
 .menu_box_footer {
 	width: 169px;
 	height: 8px;
-	background: url(/images/peritor_theme/menu_bottom.gif?1289265223) top repeat-x;	
+	background: url(/images/peritor_theme/menu_bottom.gif?1289265223) top repeat-x;
 }
 
 .menu_item{
@@ -248,8 +248,8 @@ legend {
 }
 
 a.menu_link {
-	outline-style:none !important;
-	outline-width:0pt !important;
+	outline-style:none;
+	outline-width:0pt;
 	display: block;
 	clear: both;
 	width:167px;
@@ -278,13 +278,13 @@ a.active_menu_link:hover {
 }
 
 a.menu_link_new {
-	background: url(/images/peritor_theme/arrow_content.gif?1289265223) left no-repeat;	
+	background: url(/images/peritor_theme/arrow_content.gif?1289265223) left no-repeat;
 	background-position: 29px 4px;
 	padding-left: 13px;
 }
 
 a.menu_link_create {
-	background: url(/images/peritor_theme/arrow_content.gif?1289265223) left no-repeat;	
+	background: url(/images/peritor_theme/arrow_content.gif?1289265223) left no-repeat;
 	background-position: 8px 4px;
 	padding-left: 13px;
 }
@@ -293,18 +293,18 @@ a.menu_link_create {
 /* CONTENT LINKS */
 
 a.arrow_link {
-	background: url(/images/peritor_theme/arrow_content.gif?1289265223) left no-repeat;	
+	background: url(/images/peritor_theme/arrow_content.gif?1289265223) left no-repeat;
 	background-position: 0px 2px;
 	padding-left: 14px;
 }
 
 a.arrow_link_big {
-	background: url(/images/peritor_theme/arrow_content_big.gif?1289265223) left no-repeat;	
+	background: url(/images/peritor_theme/arrow_content_big.gif?1289265223) left no-repeat;
 	padding-left: 14px;
 	font-size: 17px;
 }
 
-/* BOX grey*/ 
+/* BOX grey*/
 
 div.box {
   float: left;
@@ -332,14 +332,14 @@ div.box_bottom {
 }
 
 
-/* BOX Special */ 
+/* BOX Special */
 
 
 div.action_box{
   float: right;
   width: 274px;
   margin-left: 10px;
-  margin-top: 0px; 
+  margin-top: 0px;
 }
 
 div.special_box{
@@ -393,7 +393,7 @@ div.user_box{
   background: url(/images/peritor_theme/box_user.gif?1289265223) center no-repeat;
 }
 
-/* BOX small grey */ 
+/* BOX small grey */
 
 div.small_box {
   margin-top: 18px;
@@ -488,9 +488,9 @@ div.flash_box_bottom {
 /* TEXT */
 
 .breadcrumb {
-  background: #FFFFFF; 
-  border: 1px solid #CCCCCC; 
-  color: #666666; 
+  background: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  color: #666666;
   padding:3px 15px;
 }
 
@@ -653,7 +653,7 @@ div.progressBar div.background {
   width: 0%;
 }
 
-/* multiple select helper */ 
+/* multiple select helper */
 
 .multiple_select {
   border: 1px solid #aaa;
@@ -704,3 +704,7 @@ tr.enabled_host {
 .ruby .global { color: #7FB; }
 .ruby .expr { color: #227; }
 .ruby .escape { color: #277; }
+
+.float {
+	float: center;
+}

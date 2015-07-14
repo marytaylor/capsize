@@ -1,7 +1,6 @@
 source 'http://rubygems.org'
 require File.expand_path('../lib/capistrano_extensions', __FILE__)
 
-
 gem 'rails', '3.0.20'
 
 # Bundle edge Rails instead:

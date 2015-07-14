@@ -33,7 +33,7 @@ class Deployment < ActiveRecord::Base
   def log
     self.log_chunks.map { |chunk| chunk.content }.join
   end
-  
+
   # check (on on creation ) that the stage is ready
   # his has to done only on creation as later DB logging MUST always work
   def check_stage_ready

@@ -1,6 +1,6 @@
 class AuthSourcesController < ApplicationController
   before_filter :ensure_admin
-  
+
   def index
     @auth_sources = auth_source_class.all
     render "auth_sources/index"

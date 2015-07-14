@@ -28,7 +28,7 @@ class ApplicationController < ActionController::Base
       @sidebar_users    = User.find(:all, :order => "login ASC")
     end
   end
-  
+
   def set_timezone
     # default timezone is UTC
     Time.zone = logged_in? ? ( current_user.time_zone rescue 'UTC'): 'UTC'
@@ -60,30 +60,30 @@ class ApplicationController < ActionController::Base
       handle_no_access
     end
   end
-  
+
   def handle_no_access(messsage = "Action not allowed")
     flash[:notice] = messsage
     redirect_to home_path
     return false
   end
-  
+
   def ensure_can_access_project(project=nil)
     project ||= @project
     @can_access_project = current_user.can_view?(project) or handle_no_access
   end
-  
+
   def ensure_can_manage_projects
     @can_manage_projects = current_user.can_manage_projects? or handle_no_access
   end
-  
+
   def ensure_can_edit_project
     @can_edit_project = current_user.can_edit?(@project) or handle_no_access
   end
-  
+
   def ensure_can_manage_hosts
     current_user.can_manage_hosts? or handle_no_access
   end
-  
+
   def ensure_can_manage_recipes
     current_user.can_manage_recipes? or handle_no_access
   end

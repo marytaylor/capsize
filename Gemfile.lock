@@ -35,6 +35,11 @@ GEM
       activesupport (= 3.0.20)
     activesupport (3.0.20)
     arel (2.0.10)
+    autoprefixer-rails (5.2.1)
+      execjs
+      json
+    bootstrap-sass (3.2.0.2)
+      sass (~> 3.2)
     builder (2.1.2)
     capistrano (3.3.5)
       capistrano-stats (~> 1.1.0)
@@ -75,6 +80,7 @@ GEM
     docile (1.1.5)
     erubis (2.6.6)
       abstract (>= 1.0.0)
+    execjs (2.5.2)
     highline (1.6.21)
     i18n (0.5.0)
     json (1.8.0)
@@ -121,6 +127,7 @@ GEM
     rake (10.1.0)
     rdoc (3.12.2)
       json (~> 1.4)
+    sass (3.4.16)
     simplecov (0.9.1)
       docile (~> 1.1.0)
       multi_json (~> 1.0)
